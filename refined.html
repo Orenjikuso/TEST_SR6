@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recsys Review — Refined Version</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="toolbar">
+        <div class="brand">
+          <span class="brand-mark" aria-label="Instagram-like logo">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <defs>
+                <linearGradient id="igGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f58529"/>
+                  <stop offset="20%" stop-color="#feda77"/>
+                  <stop offset="55%" stop-color="#dd2a7b"/>
+                  <stop offset="82%" stop-color="#8134af"/>
+                  <stop offset="100%" stop-color="#515bd4"/>
+                </linearGradient>
+              </defs>
+              <rect x="5" y="5" width="54" height="54" rx="16" fill="url(#igGradient)"/>
+              <rect x="18" y="18" width="28" height="28" rx="8" fill="none" stroke="white" stroke-width="4"/>
+              <circle cx="32" cy="32" r="8" fill="none" stroke="white" stroke-width="4"/>
+              <circle cx="42.5" cy="21.5" r="3.5" fill="white"/>
+            </svg>
+          </span>
+          <span>recsys review · refined</span>
+        </div>
+        <div class="toolbar-controls">
+          <button id="prevBtn" class="nav-btn" type="button">← Prev</button>
+          <span id="slideCounter" class="slide-counter">01 / 06</span>
+          <button id="printBtn" class="nav-btn" type="button">Print / PDF</button>
+          <button id="nextBtn" class="nav-btn primary" type="button">Next →</button>
+        </div>
+      </header>
+
+      <main class="slides" aria-live="polite">
+        <section class="slide active">
+          <div class="insta-app">
+            <aside class="sidebar">
+              <div class="nav-logo" aria-label="Instagram logo">
+                <svg viewBox="0 0 180 52" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="instaWordGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#f58529"/>
+                      <stop offset="18%" stop-color="#feda77"/>
+                      <stop offset="52%" stop-color="#dd2a7b"/>
+                      <stop offset="82%" stop-color="#8134af"/>
+                      <stop offset="100%" stop-color="#515bd4"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="2" y="8" width="34" height="34" rx="9" fill="url(#instaWordGradient)"/>
+                  <rect x="10" y="16" width="18" height="18" rx="4" fill="none" stroke="white" stroke-width="2.5"/>
+                  <circle cx="23" cy="25" r="5.2" fill="none" stroke="white" stroke-width="2.5"/>
+                  <circle cx="29.5" cy="18.5" r="2.2" fill="white"/>
+                  <text x="44" y="33" style="font-size: 22px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: white; letter-spacing: -1px;">Instagram</text>
+                </svg>
+              </div>
+              <nav class="side-nav">
+                <div class="nav-item active">
+                  <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9.5Z"/></svg>
+                  Home
+                </div>
+                <div class="nav-item">
+                  <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="5.5"/><path d="M16 16l5 5"/></svg>
+                  Search
+                </div>
+                <div class="nav-item">
+                  <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="4"/><path d="M10 3.5 8 7h8l-2-3.5"/><path d="M12 11.5v4.5M9.5 14h5"/></svg>
+                  Reels
+                </div>
+                <div class="nav-item">
+                  <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.2A2.2 2.2 0 0 1 6.2 6h11.6A2.2 2.2 0 0 1 20 8.2v7.6A2.2 2.2 0 0 1 17.8 18H6.2A2.2 2.2 0 0 1 4 15.8V8.2Z"/><path d="m8 10 8 4-8 4V10Z"/></svg>
+                  Messages
+                </div>
+                <div class="nav-item">
+                  <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5a7.5 7.5 0 0 1 7.5 7.5c0 4.4-3.4 7.7-7.5 10.5-4.1-2.8-7.5-6.1-7.5-10.5A7.5 7.5 0 0 1 12 4.5Z"/><path d="M12 8.2v4.2l2.6 1.8"/></svg>
+                  Notifications
+                </div>
+                <div class="nav-item">
+                  <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                  Create
+                </div>
+                <div class="nav-item">
+                  <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 19a7 7 0 0 1 14 0"/></svg>
+                  Profile
+                </div>
+              </nav>
+            </aside>
+
+            <main class="main-content">
+              <header class="content-header">
+                <div class="user-meta">
+                  <div class="profile-avatar ring"><div class="avatar-inner">⚖️</div></div>
+                  <div>
+                    <div class="username-row">
+                      <strong>recsys_group_05</strong>
+                      <span class="status-pill">Following</span>
+                    </div>
+                    <div class="meta">4 posts · 4 members · ethics focus</div>
+                  </div>
+                </div>
+                <button class="header-btn">Message</button>
+              </header>
+
+              <div class="hero-profile">
+                <div class="profile-bio">
+                  <h1>Review Sistem Rekomendasi: Instagram</h1>
+                  <p>Analisis Aspek Etika &amp; Dampak Sosial Algoritma AI</p>
+                  <p>👥 Tim Penyusun: Adam • Alfa Ridho • Akmal • Dayat</p>
+                  <p>📌 Membedah realitas di balik optimasi atensi, bias konten, dan kedaulatan data pengguna.</p>
+                </div>
+              </div>
+
+              <div class="story-row">
+                <div class="story-item"><span class="story-ring"><span class="story-inner">⚠️</span></span><small>Bias</small></div>
+                <div class="story-item"><span class="story-ring"><span class="story-inner">📉</span></span><small>Doom</small></div>
+                <div class="story-item"><span class="story-ring"><span class="story-inner">🧩</span></span><small>Black Box</small></div>
+                <div class="story-item"><span class="story-ring"><span class="story-inner">🔒</span></span><small>Privasi</small></div>
+              </div>
+
+              <div class="feed-tabs">
+                <span class="tab active">Posts</span>
+                <span class="tab">Reels</span>
+                <span class="tab">Tagged</span>
+              </div>
+
+              <div class="gallery-grid">
+                <div class="gallery-card red-card"><span>Bias</span></div>
+                <div class="gallery-card gray-card"><span>Adiksi</span></div>
+                <div class="gallery-card blue-card"><span>Data</span></div>
+                <div class="gallery-card dark-card"><span>Ethics</span></div>
+                <div class="gallery-card purple-card"><span>Audit</span></div>
+                <div class="gallery-card subtle-card"><span>Impact</span></div>
+              </div>
+            </main>
+
+            <aside class="right-panel">
+              <div class="panel-header">Disarankan untuk Anda</div>
+              <div class="suggestion-item">
+                <div class="mini-avatar gradient">AI</div>
+                <div class="suggestion-text"><strong>recsys_ethics</strong><small>Bias algoritma</small></div>
+                <button class="follow-btn">Ikuti</button>
+              </div>
+              <div class="suggestion-item">
+                <div class="mini-avatar red">⚠</div>
+                <div class="suggestion-text"><strong>attention_economy</strong><small>Doomscrolling</small></div>
+                <button class="follow-btn">Ikuti</button>
+              </div>
+              <div class="suggestion-item">
+                <div class="mini-avatar blue">DB</div>
+                <div class="suggestion-text"><strong>privacy_watch</strong><small>Audit data</small></div>
+                <button class="follow-btn">Ikuti</button>
+              </div>
+
+              <div class="facts-box">
+                <div class="facts-title">Fakta Kunci</div>
+                <ul>
+                  <li>Optimasi didorong oleh time spent.</li>
+                  <li>Konten sensasional naik cepat.</li>
+                  <li>Profiling data bersifat mikro.</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="insta-app">
+            <aside class="sidebar">
+              <div class="nav-logo">Instagram</div>
+              <nav class="side-nav">
+                <div class="nav-item active"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9.5Z"/></svg> Feed</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 19a7 7 0 0 1 14 0"/></svg> Profile</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="4"/><path d="M10 3.5 8 7h8l-2-3.5"/><path d="M12 11.5v4.5M9.5 14h5"/></svg> Reels</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.2A2.2 2.2 0 0 1 6.2 6h11.6A2.2 2.2 0 0 1 20 8.2v7.6A2.2 2.2 0 0 1 17.8 18H6.2A2.2 2.2 0 0 1 4 15.8V8.2Z"/><path d="m8 10 8 4-8 4V10Z"/></svg> Inbox</div>
+              </nav>
+            </aside>
+
+            <main class="main-content feed-main">
+              <div class="post-header">
+                <div class="user-meta small-user">
+                  <div class="mini-avatar gradient">IG</div>
+                  <div>
+                    <strong>recsys_ethics</strong>
+                    <div class="meta">Disarankan untuk Anda</div>
+                  </div>
+                </div>
+                <span class="dots">•••</span>
+              </div>
+
+              <div class="bias-layout">
+                <div class="post-card red-strong">
+                  <span class="badge danger">DIPRIORITASKAN SISTEM</span>
+                  <h3>Konten Sensasional &amp; Komersial</h3>
+                  <p>• Memancing amarah &amp; debat komentar sengit.</p>
+                  <p>• Konten ramah pengiklan demi ruang sponsor.</p>
+                </div>
+
+                <div class="post-card muted-card">
+                  <span class="badge neutral">DITEKAN / SHADOWBAN</span>
+                  <h3>Konten Edukasi &amp; Independen</h3>
+                  <p>• Minim interaksi emosional instan.</p>
+                  <p>• Bias visual memperkuat estetika dominan.</p>
+                </div>
+              </div>
+
+              <div class="engagement-row">
+                <span class="engage-item"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.2-4.5-9.2-8.7A5.2 5.2 0 0 1 12 4.7a5.2 5.2 0 0 1 9.2 7.6C19.2 16.5 12 21 12 21Z"/></svg> 98.4K</span>
+                <span class="engage-item"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v9Z"/></svg> 3.1K</span>
+                <span class="engage-item"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5 15 4l1.5 4.5L21 10l-12 8.5L8.2 15 3 12.5Z"/></svg></span>
+                <span class="engage-item right"><svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10a2 2 0 0 1 2 2v12l-4-4H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/></svg></span>
+              </div>
+
+              <div class="caption">
+                <strong>recsys_ethics</strong> Algoritma tidak memiliki kompas moral; optimasi murni bertumpu pada waktu keterlibatan layar dan potensi laba iklan.
+              </div>
+            </main>
+
+            <aside class="right-panel">
+              <div class="panel-header">Fakta Teknis</div>
+              <div class="fact-block red-block">
+                <strong>Bias Interaksi</strong>
+                <p>Konten provokatif mendapat skor engagement paling tinggi.</p>
+              </div>
+              <div class="fact-block">
+                <strong>Bias Komersial</strong>
+                <p>Produk konsumtif lebih aman untuk sponsor dan iklan.</p>
+              </div>
+              <div class="fact-block">
+                <strong>Bias Visual</strong>
+                <p>Gaya estetika tertentu lebih sering ditampilkan.</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="insta-app">
+            <aside class="sidebar">
+              <div class="nav-logo">Instagram</div>
+              <nav class="side-nav">
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9.5Z"/></svg> Feed</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 19a7 7 0 0 1 14 0"/></svg> Story</div>
+                <div class="nav-item active"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="4"/><path d="M10 3.5 8 7h8l-2-3.5"/><path d="M12 11.5v4.5M9.5 14h5"/></svg> Reels</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8.5v7M8.5 12h7"/></svg> Settings</div>
+              </nav>
+            </aside>
+
+            <main class="main-content story-main">
+              <div class="story-viewer">
+                <div class="story-progress"><span class="progress active"></span><span class="progress active"></span><span class="progress"></span><span class="progress"></span></div>
+                <div class="story-head">
+                  <div class="user-meta small-user">
+                    <div class="mini-avatar red">⚠</div>
+                    <div>
+                      <strong>attention_economy</strong>
+                      <div class="meta">32m</div>
+                    </div>
+                  </div>
+                  <span class="dots">✕</span>
+                </div>
+                <div class="story-banner">RISIKO ADIKSI: “Mengunci Pengguna Agar Terus Scroll”</div>
+                <div class="story-cards">
+                  <div class="story-card">
+                    <span>🎰</span>
+                    <div><strong>Variable Rewards</strong><small>Rasa penasaran dopaminergik tak terduga.</small></div>
+                  </div>
+                  <div class="story-card">
+                    <span>♾️</span>
+                    <div><strong>Infinite Scroll</strong><small>Tanpa stopping cue, waktu berlalu tanpa sadar.</small></div>
+                  </div>
+                  <div class="story-card">
+                    <span>🧠</span>
+                    <div><strong>Attention Drift</strong><small>Rentang perhatian terpotong, stres meningkat.</small></div>
+                  </div>
+                </div>
+              </div>
+            </main>
+
+            <aside class="right-panel">
+              <div class="panel-header">Story Lainnya</div>
+              <div class="mini-story">
+                <div class="mini-gradient">🧠</div>
+                <div><strong>attention loop</strong><small>ketergantungan</small></div>
+              </div>
+              <div class="mini-story">
+                <div class="mini-gradient blue">📈</div>
+                <div><strong>engagement flow</strong><small>retensi</small></div>
+              </div>
+              <div class="mini-story">
+                <div class="mini-gradient soft">🔒</div>
+                <div><strong>data trace</strong><small>mekanisme</small></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="insta-app">
+            <aside class="sidebar">
+              <div class="nav-logo">Instagram</div>
+              <nav class="side-nav">
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9.5Z"/></svg> Home</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="5.5"/><path d="M16 16l5 5"/></svg> Explore</div>
+                <div class="nav-item active"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg> Why this</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8.5v7M8.5 12h7"/></svg> Privacy</div>
+              </nav>
+            </aside>
+
+            <main class="main-content modal-main">
+              <div class="modal-card">
+                <h2>Mengapa Anda melihat postingan ini?</h2>
+                <div class="modal-claim">💬 <strong>Klaim Resmi Aplikasi:</strong> "Aktivitas Anda menunjukkan Anda mungkin menyukai postingan dari kreator sejenis berdasarkan riwayat tontonan."</div>
+                <div class="modal-warning">
+                  <strong>Fakta Teknis: Masalah Kotak Hitam</strong>
+                  <p>• Penjelasan yang disajikan bersifat superfisial dan tidak membuka bobot matematis model.</p>
+                  <p>• Platform menggunakan deep learning dengan parameter yang tak terbuka untuk audit independen.</p>
+                </div>
+                <div class="modal-actions">
+                  <button class="primary-btn">Pahami Risiko Sistem</button>
+                  <button class="ghost-btn">Tutup</button>
+                </div>
+              </div>
+            </main>
+
+            <aside class="right-panel">
+              <div class="panel-header">Detail Sistem</div>
+              <div class="fact-block red-block">
+                <strong>Black box</strong>
+                <p>Model multi-stage retrieval tidak bisa diaudit publik.</p>
+              </div>
+              <div class="fact-block">
+                <strong>Akuntabilitas</strong>
+                <p>Platform menutup akses terhadap parameter dan keputusan otomatis.</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="insta-app settings-app">
+            <aside class="sidebar">
+              <div class="nav-logo">Instagram</div>
+              <nav class="side-nav">
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="12" width="16" height="8" rx="3"/><path d="M8 8V7a4 4 0 0 1 8 0v1"/><path d="M12 16v2"/></svg> Privacy</div>
+                <div class="nav-item active"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 7v5c0 4.9 3.1 9.1 7.5 11 4.4-1.9 7.5-6.1 7.5-11V7L12 3Z"/><path d="m9.5 12 1.8 1.8 3.2-3.8"/></svg> Data Audit</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18V8M12 18V5M19 18v-9"/></svg> Insights</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8.5v7M8.5 12h7"/></svg> More</div>
+              </nav>
+            </aside>
+
+            <main class="main-content settings-main">
+              <div class="settings-head">
+                <div class="setting-title">Privasi &amp; Pengawasan Perilaku</div>
+                <span class="badge info">Data Audit</span>
+              </div>
+
+              <div class="settings-list">
+                <div class="setting-row">
+                  <div><strong>Eksploitasi Dwell Time Mikro</strong><small>Merekam milidetik jeda tatap layar tanpa persetujuan eksplisit.</small></div>
+                  <span class="dot blue">●</span>
+                </div>
+                <div class="setting-row">
+                  <div><strong>Pelacakan Lintas Platform</strong><small>Meta Pixel mengumpulkan riwayat web dan e-commerce di luar aplikasi.</small></div>
+                  <span class="dot blue">●</span>
+                </div>
+                <div class="setting-row">
+                  <div><strong>Illusion of Control</strong><small>Opsi “Not Interested” tetap dipaksakan oleh profil terpersonalisasi.</small></div>
+                  <span class="dot red">●</span>
+                </div>
+              </div>
+            </main>
+
+            <aside class="right-panel">
+              <div class="panel-header">Kesimpulan</div>
+              <div class="facts-box summary-box">
+                <p>Pengguna bukan sekadar audiens konten, melainkan sumber komodifikasi data atensi.</p>
+              </div>
+              <div class="fact-block">
+                <strong>Standar etis</strong>
+                <p>Transparansi, pilihan eksplisit, dan audit independen perlu diwajibkan.</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="slide">
+          <div class="insta-app qna-app">
+            <aside class="sidebar">
+              <div class="nav-logo">Instagram</div>
+              <nav class="side-nav">
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9.5Z"/></svg> Home</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.2A2.2 2.2 0 0 1 6.2 6h11.6A2.2 2.2 0 0 1 20 8.2v7.6A2.2 2.2 0 0 1 17.8 18H6.2A2.2 2.2 0 0 1 4 15.8V8.2Z"/><path d="m8 10 8 4-8 4V10Z"/></svg> Q&amp;A</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12v5a2 2 0 0 1-2 2H9l-4 3V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v7Z"/></svg> Discussion</div>
+                <div class="nav-item"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/></svg> Support</div>
+              </nav>
+            </aside>
+
+            <main class="main-content qa-main">
+              <div class="qa-card">
+                <div class="qa-icon">❓</div>
+                <h3>Ada Pertanyaan untuk Kelompok Kami?</h3>
+                <p>Ketik tanggapan Anda mengenai etika sistem rekomendasi Instagram</p>
+                <div class="qa-box">Kirim pesan ke Adam, Alfa Ridho, Akmal, Dayat...</div>
+              </div>
+            </main>
+
+            <aside class="right-panel">
+              <div class="panel-header">Terima kasih</div>
+              <div class="facts-box summary-box">
+                <p>Sesi diskusi &amp; tanya jawab dibuka.</p>
+              </div>
+              <div class="fact-block">
+                <strong>Inti pesan</strong>
+                <p>Algoritma harus menjadi cermin kebutuhan manusia, bukan mesin yang membelenggu perhatian.</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <nav class="slide-nav" aria-label="Navigasi slide"></nav>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
